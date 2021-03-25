@@ -1,0 +1,25 @@
+body {
+  background: url("https://wallpapercave.com/wp/wp2857052.jpg");
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+  #text-align: center;
+}
+
+canvas {
+  border: 3px solid darkgrey;
+  height: 150px;
+  width: 250px;
+}
+
+.uploadHeader {
+  font-size: 20px;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 10px;
+}

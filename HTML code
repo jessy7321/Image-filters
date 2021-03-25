@@ -1,0 +1,53 @@
+<h1>Filter Fun</h1>
+
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<canvas id="can"></canvas>
+
+<div class="uploadHeader">
+  <h5> Upload your Image: </h5>
+</div>
+
+<p>
+  Upload Image: <input type="file" multiple-"false" accept="image/*" id="upload" onchange="UploadImage()"></p>
+
+<div class="uploadHeader">
+  <h5> Select a filter to apply:</h5>
+</div>
+
+<p> Color filters:
+
+  <input type="button" value="Grayscale" onclick="grayScale()">
+
+  <input type="button" value="Red" onclick="doRed()">
+
+  <input type="button" value="Orange" onclick="doOrange()">
+
+  <input type="button" value="Yellow" onclick="doYellow()">
+
+  <input type="button" value="Green" onclick="doGreen()">
+
+  <input type="button" value="Blue" onclick="doBlue()">
+
+  <input type="button" value="Indigo" onclick="doIndigo()">
+
+  <input type="button" value="Violet" onclick="doViolet()">
+
+  <input type="button" value="Rainbow" onclick="doRainbow()">
+
+</p>
+
+<p> Other filters:
+
+  <input type="button" value="Brighten" onclick="brighten()">
+
+  <input type="button" value="Dim" onclick="dim()">
+
+  <p>
+    Reset the image: <input type="button" value="Reset Image" onclick="resetImage()">
+  </p>
+
+  <p>
+    Clear the canvas: <input type="button" value="Clear" onclick="clearCanvas()">
+  </p>

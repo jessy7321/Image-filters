@@ -1,25 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
 body {
-  background: url("https://wallpapercave.com/wp/wp2857052.jpg");
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: rgb(37, 37, 37);
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+h5 {
+	text-align: center;
+}
+
+.main {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	flex: 50%;
+}
+
+.filters {
+	text-align: justify;
+	background-color: white;
+	padding: 20px;
+	margin: 25px;
+	border-radius: 5px;
+}
+
+.color-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	margin: 10px;
+}
+
+.color-filters > input[type="button"]:nth-child(1) {
+	background-color: #b1b1b1;
+}
+
+input[type="button"] {
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+input[type="button"]:hover {
+	box-shadow: 2px 3px 3px #909090;
+}
+
+.other-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin: 10px;
 }
 
 h1 {
-  color: white;
-  #text-align: center;
+	color: white;
+	text-align: center;
 }
 
 canvas {
-  border: 3px solid darkgrey;
-  height: 150px;
-  width: 250px;
+	border: 3px solid darkgrey;
+	height: 350px;
+	width: 450px;
 }
 
-.uploadHeader {
-  font-size: 20px;
-  color: white;
+.upload-text {
+	color: white;
 }
 
-p {
-  color: white;
-  font-size: 10px;
+@media only screen and (max-width: 992px) {
+	.main {
+		flex-direction: column;
+	}
 }

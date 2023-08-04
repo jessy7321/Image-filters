@@ -1,53 +1,101 @@
-<h1>Filter Fun</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Image Filters</title>
+		<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
 
-<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
-</script>
-
-<canvas id="can"></canvas>
-
-<div class="uploadHeader">
-  <h5> Upload your Image: </h5>
-</div>
-
-<p>
-  Upload Image: <input type="file" multiple-"false" accept="image/*" id="upload" onchange="UploadImage()"></p>
-
-<div class="uploadHeader">
-  <h5> Select a filter to apply:</h5>
-</div>
-
-<p> Color filters:
-
-  <input type="button" value="Grayscale" onclick="grayScale()">
-
-  <input type="button" value="Red" onclick="doRed()">
-
-  <input type="button" value="Orange" onclick="doOrange()">
-
-  <input type="button" value="Yellow" onclick="doYellow()">
-
-  <input type="button" value="Green" onclick="doGreen()">
-
-  <input type="button" value="Blue" onclick="doBlue()">
-
-  <input type="button" value="Indigo" onclick="doIndigo()">
-
-  <input type="button" value="Violet" onclick="doViolet()">
-
-  <input type="button" value="Rainbow" onclick="doRainbow()">
-
-</p>
-
-<p> Other filters:
-
-  <input type="button" value="Brighten" onclick="brighten()">
-
-  <input type="button" value="Dim" onclick="dim()">
-
-  <p>
-    Reset the image: <input type="button" value="Reset Image" onclick="resetImage()">
-  </p>
-
-  <p>
-    Clear the canvas: <input type="button" value="Clear" onclick="clearCanvas()">
-  </p>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="main">
+			<!--  UPLOAD IMAGE  -->
+			<div class="container">
+				<h1>Image Filters</h1>
+				<canvas id="can"></canvas>
+				<div class="upload-text">
+					<h5>Upload your Image:</h5>
+					Upload Image: <input type="file" class="button" multiple-"false"
+					accept="image/*" id="upload" onchange="UploadImage()">
+				</div>
+			</div>
+			<!-- IMAGE FILTERS -->
+			<div class="container">
+				<div class="filters">
+					<h5>Select a filter to apply:</h5>
+					Color filters:<br />
+					<div class="color-filters">
+						<input
+							type="button"
+							value="Grayscale"
+							onclick="grayScale()"
+							style="background-color: #b1b1b1"
+						/>
+						<input
+							type="button"
+							value="Red"
+							onclick="doRed()"
+							style="background-color: red"
+						/>
+						<input
+							type="button"
+							value="Orange"
+							onclick="doOrange()"
+							style="background-color: orange"
+						/>
+						<input
+							type="button"
+							value="Yellow"
+							onclick="doYellow()"
+							style="background-color: yellow"
+						/>
+						<input
+							type="button"
+							value="Green"
+							onclick="doGreen()"
+							style="background-color: green"
+						/>
+						<input
+							type="button"
+							value="Blue"
+							onclick="doBlue()"
+							style="background-color: blue"
+						/>
+						<input
+							type="button"
+							value="Indigo"
+							onclick="doIndigo()"
+							style="background-color: #6500ad"
+						/>
+						<input
+							type="button"
+							value="Violet"
+							onclick="doViolet()"
+							style="background-color: violet"
+						/>
+					</div>
+					<br />Other filters:<br />
+					<div class="other-filters">
+						<i class="fas fa-lightbulb"></i
+						><input type="button" value="Brighten" onclick="brighten()" />
+						<br />
+						<i class="fas fa-moon"></i
+						><input type="button" value="Dim" onclick="dim()" />
+					</div>
+					<br />Reset the image:
+					<input type="button" value="Reset Image" onclick="resetImage()" />
+					<br /><br />Clear the canvas:
+					<input type="button" value="Clear" onclick="clearCanvas()" />
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
